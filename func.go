@@ -1,14 +1,22 @@
 package main
+
 import (
 	"fmt"
 )
-func paintCalculator(lenght int, width int) {
+
+func paintCalculator(length float64, width float64) (float64, error) {
+	if width < 0 {
+		return 0, fmt.Errorf("put a positive number")
+	} else if length < 0 {
+		return 0, fmt.Errorf("put a positive number")
+	}
 	area := length * width
-	fmt.Printf("The required paint is %.3f", area)
-	return 
+	fmt.Printf("The required paint is %.1f liters\n", area)
+	return area, nil
 }
 
-
 func main() {
-	paintCalculator(20, 4)
+	amount, err := paintCalculator(1, -4)
+	fmt.Println(err)
+	fmt.Println(amount, err)
 }
