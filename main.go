@@ -5,10 +5,9 @@ import (
 )
 
 func main() {
-	var num int
-	anotherNumber := &num
-
-	num = 10
-	fmt.Println(num)
-	fmt.Println(*anotherNumber)
+	var myArray [10] string
+	myArray[0] = "Chuks"
+	myArray[5] = "89"
+	myArray[8] = "welldone"
+	fmt.Println(myArray)
 }
