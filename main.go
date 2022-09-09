@@ -1,12 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
+var firstBook string
 func main() {
-	notes := [8]string{"do","re", "me", "fa", "so", "la", "ti", "do"}
-	for index, value := range notes {
-		fmt.Println(index, value)
-	}
+	firstBook = "Things fall apart"
+	secondBook := &firstBook
+	fmt.Println(*secondBook)
 }
