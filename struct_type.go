@@ -11,8 +11,14 @@ type part struct {
 	description string
 	count int
 }
+func double(number int) {
+	result := number * 2
+	fmt.Println(result)
+} 
 
 func main() {
+	double(10)
+
 	var porsche car
 	porsche.name = "Porsche 911 R"
 	porsche.topSpeed = 320

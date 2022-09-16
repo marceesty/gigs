@@ -12,16 +12,12 @@ type Subscriber struct {
 	Name string
 	Phone int
 	Active bool
-	Address
+	HomeAddress Address
 
 }
 
 func main() {
-	subscriber := Subscriber{Name: "Kenyol"}
-	subscriber.Number = "20"
-	subscriber.Zipcode = "23345"
+	subscriber := Subscriber.Name["Kenyol"]
 	fmt.Println(subscriber)
-
-	//Deleting homeAddress above and having only address still make address accessible
-	
 }
+
