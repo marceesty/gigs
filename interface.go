@@ -53,6 +53,7 @@ func playList(device player, songs []string) {
 	device.stop()
 }
 
+
 func main() {
 	var toy NoiseMaker
 	toy = Whistle("Toyco Canary")
