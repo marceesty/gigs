@@ -1,12 +1,16 @@
 package main
 
 import (
-	"fmt"
+	. "fmt"
 )
 
-func main() {
+func count() {
 	for i := 0; i < 10; i++ {
-		defer fmt.Printf("%d", i)
-		fmt.Printf("%d\t", i)
+		Printf("%d\t", i)
 	}
+}
+
+func main() {
+	defer count()
+	Println("how are you")
 }
