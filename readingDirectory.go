@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	files, err := ioutil.ReadDir("src")
+	files, err := ioutil.ReadDir("first_webapp")
 	if err != nil {
 		log.Fatal(err)
 	}
