@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 )
+// panic report call
 func reportPanic() {
 	p := recover()
 	if p == nil {
